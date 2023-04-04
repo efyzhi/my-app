@@ -1,17 +1,16 @@
 import {useState} from "react"
 import styles from "../styles/Contact.module.css"
-// import {useState} from "react"
 import {MdOutlineEmail} from "react-icons/md";
 import {FiTwitter} from "react-icons/fi";
 import {BsWhatsapp} from "react-icons/bs";
 import {BsGithub} from "react-icons/bs";
-// import "./Styles/Contact.css"
+
 
 
 const Contact = () => {
   return (
     <>
-      <h1> CONTACT </h1>
+      
     <main className={styles.formContainer}>
       <div className={styles.firstContainer}> 
       <article className={styles.box}>
@@ -26,8 +25,9 @@ const Contact = () => {
           <h4> Whatsapp </h4>
           <h5> +2347054212232 </h5>
            <a href="https://api.whatsapp.com/send?=+2347054212232" target={"_blank"} >Send a message </a>
-        </article> */}
-        
+        </article> 
+         */}
+         
         <article className={styles.box}>
           <FiTwitter/>
           <h4> Twitter </h4>
@@ -50,13 +50,13 @@ const Contact = () => {
         <input
           type="text"
           required 
-          name="name"/> </li>
+          name="name" className={styles.input} /> </li>
   
       <li>  <label> Email </label>
         <input
           type="text"
           required
-          name="email"/>  </li>
+          name="email" className={styles.input} />  </li>
       
      <li>  <label> Phone </label>
         <input

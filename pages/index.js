@@ -1,13 +1,12 @@
 import React from "react";
-// import hom from "../images/efyzhi.jpg"
-// import "./Styles/Home.css"
+import styles from "../styles/Home.module.css"
 
 const Home = () => {
   return (
     <>
       <div className="hero-bg">  </div>
-    <div className="home-container">
-       <div className="home-text">
+    <div className={styles.homeContainer}>
+       <div className={styles.homeText}>
          <h1> HI! </h1>
          <p> I am Sunday Robert </p>
          <h2> A Frontend Engineer </h2>

@@ -1,5 +1,5 @@
 // import proj from "../images/proj.jpg"
-// import "./Styles/Projects.css"
+import styles from "styles/Layout.module.css"
 
 
 const Service = () => {
@@ -7,7 +7,7 @@ const Service = () => {
     <>
       <h1> Projects Page </h1>
       <div className="proj-container">
-        <img src={proj} alt="imag" className="proj-img"/>
+        <img  className="proj-img"/>
         <h3> title: Proj 1 </h3>
         <h3> Proj description: </h3>
         <h3> github link</h3>

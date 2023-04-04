@@ -3,10 +3,9 @@
   grid-template-columns: 1fr 1.5fr;
   align-items: stretch;
   justify-content: center;
-  border: 2px black solid;
-  background-color: #152238;
-  margin: 50px;
-  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
   border-radius: 20px;
 }
 
@@ -14,19 +13,27 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  padding-left: 20px;
+  background-color: #152238;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .box {
-  background: #39ace7;
   padding: 20px;
+  color: #39ace7;
+}
+
+.box a {
+  color: #a8c5d4;
+  text-decoration: none;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-  border: 2px black solid;
-  border-radius: 5px;
+  margin-left:  0px;
+  border-radius: 0px 15px 15px 0px;
   padding: 20px;
   background-color: #fff;
   color: #000;
@@ -64,7 +71,7 @@
 }
 
 .input:focus {
- border-top-style: hidden;
+  border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
@@ -106,4 +113,14 @@
   background: #152238;
   color: #fff;
   letter-spacing: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submitButton:hover {
+  background: #39ace7;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all linear .5s;
 }
