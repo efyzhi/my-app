@@ -19,9 +19,9 @@ const handleSideBar = () => {
       
       <div> {children} </div>
       
-      <div className={sideBar ? styles.sideBar .active : styles.sideBar } onClick={handleSideBar}>
+      <div className={!sideBar ? styles.sideBar .active : styles.sideBar } onClick={handleSideBar}>
       </div>
-     { !sideBar && ( <nav className={styles.navMenu} onClick={handleSideBar}>
+     { sideBar && ( <nav className={styles.navMenu} onClick={handleSideBar}>
 
          <Link href="/" passHref  smooth={true}
          spy={true} > <BiHomeAlt onClick={() => setActivNav(!activNav)} className={activNav === "/" ? styles.active : styles }  /></Link>
@@ -39,7 +39,7 @@ const handleSideBar = () => {
       </nav> 
         )
       }
-        <button className={styles.menu} onClick={handleSideBar} >  { sideBar ? <FaBars/> : <FaTimes/>}   
+        <button className={styles.menu} onClick={handleSideBar} >  { sideBar ? <FaTimes/> : <FaBars/> }   
         </button>
     </div>    
     </main>
