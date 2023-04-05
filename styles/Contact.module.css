@@ -124,3 +124,9 @@
   font-weight: 600;
   transition: all linear .5s;
 }
+
+@media screen and (max-width: 500px) {
+  .formContainer {
+    margin-top: 25px;
+  }
+}

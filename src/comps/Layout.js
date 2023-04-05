@@ -1,6 +1,6 @@
 import { react, useState, useEffect } from "react" 
 import Link from 'next/link'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { BiHomeAlt, BiUser} from "react-icons/bi";
 import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs"
 import styles from "styles/Layout.module.css"
@@ -19,9 +19,9 @@ const handleSideBar = () => {
       
       <div> {children} </div>
       
-      <div className={sideBar ? styles.sideBar .active : styles.sideBar} onClick={handleSideBar}>
-       boy </div>
-     <nav className={styles.navMenu}>
+      <div className={sideBar ? styles.sideBar .active : styles.sideBar } onClick={handleSideBar}>
+      </div>
+     { !sideBar && ( <nav className={styles.navMenu} onClick={handleSideBar}>
 
          <Link href="/" passHref  smooth={true}
          spy={true} > <BiHomeAlt onClick={() => setActivNav(!activNav)} className={activNav === "/" ? styles.active : styles }  /></Link>
@@ -36,8 +36,10 @@ const handleSideBar = () => {
         <Link href="/contact" onClick={() => setActivNav("/contact")} className={activNav === "/contact" ? "active" : "" } > <BsChatSquare className={styles.icons} /></Link>
         
         {/* </div> */}
-      </nav>
-        <button className={styles.menu} onClick={handleSideBar} >   <FaBars /> 
+      </nav> 
+        )
+      }
+        <button className={styles.menu} onClick={handleSideBar} >  { sideBar ? <FaBars/> : <FaTimes/>}   
         </button>
     </div>    
     </main>
