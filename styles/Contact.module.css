@@ -128,7 +128,7 @@
 @media screen and (max-width: 500px) {
   .formContainer {
     margin-top: 45px;
-    max-width: 600px;
+    max-width: 450px;
     margin-left: 20px;
   /* margin: auto; */
   }
