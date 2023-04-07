@@ -1,0 +1,9 @@
+img .projImage {
+    width: 20px;
+    height: 20px;
+}
+
+.projBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

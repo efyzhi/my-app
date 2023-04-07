@@ -127,9 +127,68 @@
 
 @media screen and (max-width: 500px) {
   .formContainer {
-    margin-top: 45px;
-    max-width: 450px;
-    margin-left: 20px;
+    display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+  overflow: hidden;
+  /* gap: 20px; */
+  padding: 10px;
+  border-radius: 20px;
+    margin-top: 5px;
+    /* max-width: 450px; */
+    /* margin-left: 20px; */
   /* margin: auto; */
   }
+
+  .firstContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 20px;
+    background-color: unset;
+    border-radius: 15px;
+  }
+  
+  .box {
+    padding: 20px;
+    /* color: #39ace7; */
+    color: #000;
+  }
+  
+  .box a {
+    color: #a8c5d4;
+    text-decoration: none;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .flex li {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+
+  .secondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+  }
+  
+  
 }
