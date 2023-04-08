@@ -19,7 +19,7 @@ const Service = ({ repos }) => {
         {repos.map(repos => (
           <div key={repos.id}> 
             <h3>{ repos.name }</h3>
-            < img src={repos.owner.avatar_url} className={styles.projImage}/>
+            {/* < img src={repos.owner.avatar_url} className={styles.projImage}/> */}
           </div> 
         ))}
       </div>

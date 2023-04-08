@@ -125,7 +125,7 @@
   transition: all linear .5s;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .formContainer {
     display: flex;
   flex-direction: column-reverse;
@@ -137,19 +137,17 @@
   padding: 10px;
   border-radius: 20px;
     margin-top: 5px;
-    /* max-width: 450px; */
-    /* margin-left: 20px; */
-  /* margin: auto; */
+    max-width: 100%;
   }
 
   .firstContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 0.2rem;
+    justify-content: space-between;
+    /* gap: 0.2rem; */
     background-color: unset;
     border-radius: 15px;
-    /* width: 65%; */
+    width: 100%;
   }
   
   .box {
@@ -184,6 +182,7 @@
 
   .secondContainer {
     width: 90%;
+   margin-top: 20px;
   }
   
 }
