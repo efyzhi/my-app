@@ -145,10 +145,11 @@
   .firstContainer{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    padding-left: 20px;
+    justify-content: center;
+    gap: 0.2rem;
     background-color: unset;
     border-radius: 15px;
+    /* width: 65%; */
   }
   
   .box {
@@ -167,10 +168,10 @@
     flex-direction: column;
     border-radius: 15px;
     padding: 20px;
+    margin-top: 10px;
     background-color: #fff;
     color: #000;
     width: 100%;
-    height: 50vh;
   }
 
   .flex li {
@@ -180,15 +181,9 @@
     margin-top: 20px;
     text-align: left;
   }
-  
 
   .secondContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80vw;
-    height: 100vh;
+    width: 90%;
   }
-  
   
 }
